@@ -28,6 +28,8 @@ class Location extends Scene {
         if (this.engine.storyData.Locations[locationData].Suit){
             if (this.engine.storyData.Locations[locationData].Suit === "true"){
                 suit_on = true;
+            } else {
+                suit_on = false;
             }
         }
 

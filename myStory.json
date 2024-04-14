@@ -4,7 +4,7 @@
     "InitialLocation": "IntroCmdDeck",
     "Locations": {
         "IntroCmdDeck": {
-            "Body": "I’m shaking, sitting in my chair in the spaceship’s Command Deck. My memory feels fuzzy, maybe it’s because of the abrupt panic from the alarms blaring out of nowhere. My sole shipmate, Taz, looks just as confused as me.",
+            "Body": "<p style=\"font-family:verdana\">I look down at my hands. I'm shaking, sitting in my chair in the spaceship's Command Deck. My memory feels fuzzy, maybe it's because of the abrupt panic from the alarms blaring out of nowhere.<br>I turn to see my sole shipmate, Taz. They look just as confused as me. \"Ugh, I feel like shit... can we please shut up that stupid siren??\"</p>",
             "Choices": [
                 {
                     "Text": "Look around",
@@ -13,7 +13,7 @@
             ]
         },
         "CmdDeck": {
-            "Body": "I'm in the Command Deck.\nThere were a few more seats than we had people on the crew. This ship was being reused from a previous mission that was to hold about 15 people. It feels like just seconds ago everything was fine...what happened?",
+            "Body": "<p style=\"font-family:verdana\">I'm in the Command Deck.<br>There were a few more seats than we had people on the crew. This ship was being reused from a previous mission that was to hold about 15 people. It feels like just seconds ago everything was fine...what happened?<br>Taz seems to be feeling out of it still, so I guess they are going to accompany me silently as I do all the work...at least the alarm stopped on it's own, I was about to develop a headache because of it.</p>",
             "Choices": [
                 {
                     "Text": "Towards back",
@@ -22,7 +22,7 @@
             ]
         },
         "TechRm": {
-            "Body": "I'm in the Tech Room.\nThe main computer terminal is in here, as well as a bunch of other semi-important technology. You can use the terminal to do a few things regarding the ship.",
+            "Body": "<p style=\"font-family:verdana\">Hey look, it's the Tech Room.<br>The main computer terminal right here, as well as a bunch of other semi-important technology we are using for our research on micro black holes. You can use the terminal to do a few things regarding the ship.</p>",
             "Choices": [
                 {
                     "Text": "Towards front",
@@ -53,7 +53,7 @@
             ]
         },
         "TechTerminal": {
-            "Body": "[describe a booting screen here]",
+            "Body": "<p style=\"font-family:courier;color:seagreen\">(WIP) BOOTING</p>",
             "Choices": [
                 {
                     "Text": "Logs",
@@ -70,7 +70,7 @@
             ]
         },
         "TechTerminalLog": {
-            "Body": "log user1 user2 user3 user4",
+            "Body": "<p style=\"font-family:courier;color:seagreen\">WIP log user1 user2 user3 user4</p>",
             "Choices": [
                 {
                     "Text": "Scan",
@@ -83,7 +83,7 @@
             ]
         },
         "TechTerminalScan": {
-            "Body": "scanning ship",
+            "Body": "<p style=\"font-family:courier;color:seagreen\">(WIP) Scanning ship</p>",
             "Choices": [
                 {
                     "Text": "Log",
@@ -96,7 +96,7 @@
             ]
         },
         "RecRm": {
-            "Body": "The Rec Room. This is where crew members get to chill and eat. The pantry has enough food to last a crew of 8. There are some playing cards strewn across the table, it seems we had stopped playing midgame for some reason...and why is there 4 hands of cards?",
+            "Body": "<p style=\"font-family:verdana\">Ahhh, my favorite, the Rec Room.<br>This is where crew members get to chill and eat...ugh I hate spaceship food. What's the deal with spaceship food? Sorry, that was a bad joke.<br>Anyways, the pantry seems to have enough food to last a crew of 8 people. There are also some playing cards strewn across the table, it seems like we stopped playing midgame for some reason... wait why are there 4 hands of cards?</p>",
             "Choices": [
                 {
                     "Text": "Towards Front",
@@ -119,7 +119,7 @@
             ]
         },
         "BedRm": {
-            "Body": "In the Bedroom, there are 15 beds here to match the 15 seats from the mission long before us. It makes it feel extra roomy even though our crew is fewer. There’s also an area to take care of hygiene and for changing.",
+            "Body": "<p style=\"font-family:verdana\">The Bedroom has 15 beds to match the 15 seats in the front from that mission long before us. It makes it feel extra roomy even though our crew is fewer. There's also an area to take care of hygiene and for changing clothes or suits.<br>I'm so glad they finally invented spaceship showers. I hear they used to do sponge baths...I would still feel gross after that.</p>",
             "Choices": [
                 {
                     "Text": "Towards front",
@@ -137,7 +137,7 @@
             "Suit": "false"
         },
         "BedRmSuit": {
-            "Body": "I am still wearing my spacesuit. In the bedroom, there are 15 beds here to match the 15 seats from the mission long before us. It makes it feel extra roomy even though our crew is fewer. There’s also an area to take care of hygiene and for changing.",
+            "Body": "<p style=\"font-family:verdana\">I'm still wearing my spacesuit. It's lowkey uncomfortable, I hate being on outside maintenance...<br>Anyway, the bedroom still has 15 beds to match the 15 seats in the front from that mission long before us. It makes it feel extra roomy even though our crew is fewer. There's also an area to take care of hygiene and for changing.</p>",
             "Choices": [
                 {
                     "Text": "Towards front",
@@ -155,7 +155,7 @@
             "Suit": "true"
         },
         "EngRm": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+            "Body": "<p style=\"font-family:verdana\">Engineering has access to the engine, shocker! I would've never guessed that. It also has some other things like the ship power and propulsion.<br>This is also where we exit the ship when we have to outside maintenance stuff. Well, that's as long we are wearing a suit of course. Or else you're blood starts boiling and you'll expand and explode. I remember learning that in astronaut school.</p>",
             "Choices": [
                 {
                     "Text": "Towards Front",
@@ -173,21 +173,36 @@
                 }
             ]
         },
-        "OutShip": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "EngRmCutscene": {
+            "Body": "<p style=\"font-family:verdana\">I return to the ship and Taz greets me. We should make our way back to the Command Deck now that everything has been taken care of.<br>I might wanna take off the spacesuit since it's a bit uncomfortable...or I can keep it on if I'm feeling THAT lazy I guess.</p>",
             "Choices": [
                 {
-                    "BackInside": "Back inside",
-                    "Target": "EngRm"
+                    "Text": "Towards Front",
+                    "Target": "BedRmSuit"
+                }
+            ],
+            "LockedChoices": [
+                {
+                    "Text": "Towards Front",
+                    "Target": "BedRm"
+                }
+            ]
+        },
+        "OutShip": {
+            "Body": "<p style=\"font-family:verdana\">I make my way to the starboard side of the ship where the loose vent is located. It is barely hanging on by one of its four bolts.<br>The other bolts look to be in sorry condition, surprisingly aged for being relatively new...and what's with this sort of weird, black, slimy residue on the grate? It's kind of gross...<br>Eh, whatever, I sort of just want to get out of this stupid suit. I straighten out the vent and put new bolts in.</p>",
+            "Choices": [
+                {
+                    "Text": "Back inside",
+                    "Target": "EngRmCutscene"
                 }
             ],
             "Task": true
         },
         "EndCmd": {
-            "Body": "normal ending"
+            "Body": "<p style=\"font-family:verdana\">(WIP) Normal Ending</p>"
         },
         "SecretEndCmd": {
-            "Body": "ending if u dont take off suit"
+            "Body": "<p style=\"font-family:verdana\">{(WIP) Secret Ending}</p>"
         }
     }
 }
