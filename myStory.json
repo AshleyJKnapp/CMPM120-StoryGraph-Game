@@ -155,7 +155,7 @@
             "Suit": "true"
         },
         "EngRm": {
-            "Body": "<p style=\"font-family:verdana\">Engineering has access to the engine, shocker! I would've never guessed that. It also has some other things like the ship power and propulsion.<br>This is also where we exit the ship when we have to outside maintenance stuff. Well, that's as long we are wearing a suit of course. Or else you're blood starts boiling and you'll expand and explode. I remember learning that in astronaut school.</p>",
+            "Body": "<p style=\"font-family:verdana\">Engineering has access to the engine, shocker! I would've never guessed that. It also has some other things like the ship power and propulsion.<br>This is also where we exit the ship when we have to outside maintenance stuff. Well, that's as long we are wearing a suit of course. Or else your blood starts boiling and you'll expand and explode. I remember learning that in astronaut school.</p>",
             "Choices": [
                 {
                     "Text": "Towards Front",
@@ -174,7 +174,7 @@
             ]
         },
         "EngRmCutscene": {
-            "Body": "<p style=\"font-family:verdana\">I return to the ship and Taz greets me. We should make our way back to the Command Deck now that everything has been taken care of.<br>I might wanna take off the spacesuit since it's a bit uncomfortable...or I can keep it on if I'm feeling THAT lazy I guess.</p>",
+            "Body": "<p style=\"font-family:verdana\">I return to the ship and Taz silently greets me. We should make our way back to the Command Deck now that everything has been taken care of.<br>I might wanna take off the spacesuit since it's a bit uncomfortable...or I can keep it on if I'm feeling THAT lazy I guess.</p>",
             "Choices": [
                 {
                     "Text": "Towards Front",
