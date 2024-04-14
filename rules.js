@@ -10,7 +10,7 @@ class Start extends Scene {
 
     handleChoice() {
         this.engine.gotoScene(Location, this.engine.storyData.InitialLocation); // DONE // TODO: replace this text by the initial location of the story
-    }
+    } 
 }
 
 class Location extends Scene {
