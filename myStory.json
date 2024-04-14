@@ -119,15 +119,15 @@
             ]
         },
         "BedRm": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+            "Body": "In the Bedroom, there are 15 beds here to match the 15 seats from the mission long before us. It makes it feel extra roomy even though our crew is fewer. There’s also an area to take care of hygiene and for changing.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Towards front",
+                    "Target": "RecRm"
                 },
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Towards back",
+                    "Target": "EngRm"
                 },
                 {
                     "Text": "Change",
@@ -137,15 +137,15 @@
             "Suit": "false"
         },
         "BedRmSuit": {
-            "Body": "I am still wearing my spacesuit. ",
+            "Body": "I am still wearing my spacesuit. In the bedroom, there are 15 beds here to match the 15 seats from the mission long before us. It makes it feel extra roomy even though our crew is fewer. There’s also an area to take care of hygiene and for changing.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Towards front",
+                    "Target": "RecRm"
                 },
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Towards back",
+                    "Target": "EngRm"
                 },
                 {
                     "Text": "Change",
@@ -158,22 +158,18 @@
             "Body": "Oakes College, even the buildings have tree bark on them.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "Towards Front",
+                    "Target": "BedRmSuit"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Check Outside",
+                    "Target": "OutShip"
                 }
             ],
             "LockedChoices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Towards Front",
+                    "Target": "BedRm"
                 }
             ]
         },
@@ -181,8 +177,8 @@
             "Body": "Oakes College, even the buildings have tree bark on them.",
             "Choices": [
                 {
-                    "BackInside": "North",
-                    "Target": "Rachel Carson"
+                    "BackInside": "Back inside",
+                    "Target": "EngRm"
                 }
             ],
             "Task": true
