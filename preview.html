@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Graph Previewer</title>
+    <script src="cytoscape.min.js"></script>
+</head>
+
+<body>
+    <div>
+        This page gives a graphical preview of the story graph described by <code>myStory.json</code>.
+    </div>
+    <pre id="logOutput"></pre>
+    <div id="graph" style="width: 640px; height: 480px; border: thin solid gray;"></div>
+    <pre id="details"></pre>
+</body>
+<script>
+    function log(msg) {
+        logOutput.innerHTML += msg + "\n";
+    }
+
+    log("Fetching JSON file...")
+    fetch("myStory.json").then(
+        (response) => {
+            log("Parsing JSON file...");
+            return response.json();
+        }
+    ).then(
+        (storyData) => {
+            log("Story data loaded.");
+            log("\n");
+            log("Story metadata:")
+            for (let key of ["Title", "Credits", "InitialLocation"]) {
+                log(`\t${key}: ${storyData[key]}`);
+            }
+
+            log("\n")
+            log("Story graph visualization:")
+
+            let elements = [];
+            let nodes = [];
+            let edges = []
+            for (let [key, location] of Object.entries(storyData.Locations)) {
+                nodes.push({ data: { id: key, name: location.Body } });
+                for (let choice of location.Choices || []) {
+                    edges.push({ data: { source: key, target: choice.Target, id: key + ": " + choice.Text } });
+                }
+            }
+
+            let cy = cytoscape({
+                container: graph,
+                layout: {
+                    name: 'breadthfirst'
+                },
+                elements: { nodes, edges },
+            });
+            cy.style([
+            {
+                    selector: `[id="${storyData.InitialLocation}"]`,
+                    style: {
+                        'border-width': '10',
+                        'border-color': 'lightblue'
+                    }
+                },
+                {
+                    selector: 'node',
+                    style: {
+                        'label': 'data(id)',
+                        'text-valign': 'center'
+                    }
+                },
+                {
+                    selector: 'edge',
+                    style: {
+                        'width': 5,
+                        'line-color': '#ccc',
+                        'target-arrow-color': '#ccc',
+                        'target-arrow-shape': 'triangle',
+                        'curve-style': 'bezier',
+                        'label': 'data(id)',
+                        'font-size': '10px',
+                        'text-rotation': 'autorotate'
+                    }
+                },
+            ]);
+
+            cy.on('mouseover', 'node', function (evt) {
+                details.innerHTML = storyData.Locations[this.id()].Body;
+
+            });
+            cy.on('mouseover', 'edge', function (evt) {
+                details.innerHTML = this.id();
+            });
+            cy.on('mouseout', function (evt) {
+                details.innerHTML = '';
+            });
+        }
+    ).catch(reason => log(reason));
+</script>
+
+</html>

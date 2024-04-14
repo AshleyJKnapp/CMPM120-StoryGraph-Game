@@ -1,0 +1,197 @@
+{
+    "Title": "Epic Title idk Yet!",
+    "Credits": "Created by Ashley Knapp (ajknapp@ucsc.edu).",
+    "InitialLocation": "IntroCmdDeck",
+    "Locations": {
+        "IntroCmdDeck": {
+            "Body": "I’m shaking, sitting in my chair in the spaceship’s Command Deck. My memory feels fuzzy, maybe it’s because of the abrupt panic from the alarms blaring out of nowhere. My sole shipmate, Taz, looks just as confused as me.",
+            "Choices": [
+                {
+                    "Text": "Look around",
+                    "Target": "CmdDeck"
+                }
+            ]
+        },
+        "CmdDeck": {
+            "Body": "I'm in the Command Deck.\nThere were a few more seats than we had people on the crew. This ship was being reused from a previous mission that was to hold about 15 people. It feels like just seconds ago everything was fine...what happened?",
+            "Choices": [
+                {
+                    "Text": "Towards back",
+                    "Target": "TechRm"
+                }
+            ]
+        },
+        "TechRm": {
+            "Body": "I'm in the Tech Room.\nThe main computer terminal is in here, as well as a bunch of other semi-important technology. You can use the terminal to do a few things regarding the ship.",
+            "Choices": [
+                {
+                    "Text": "Towards front",
+                    "Target": "CmdDeck"
+                },
+                {
+                    "Text": "Towards Back",
+                    "Target": "RecRm"
+                },
+                {
+                    "Text": "Investigate Terminal",
+                    "Target": "TechTerminal"
+                }
+            ],
+            "EndChoices": [
+                {
+                    "Text": "Towards front",
+                    "Target": "EndCmd"
+                },
+                {
+                    "Text": "Towards front",
+                    "Target": "SecretEndCmd"
+                },
+                {
+                    "Text": "Towards Back",
+                    "Target": "RecRm"
+                }
+            ]
+        },
+        "TechTerminal": {
+            "Body": "[describe a booting screen here]",
+            "Choices": [
+                {
+                    "Text": "Logs",
+                    "Target": "TechTerminalLog"
+                },
+                {
+                    "Text": "Scan",
+                    "Target": "TechTerminalScan"
+                },
+                {
+                    "Text": "Exit",
+                    "Target": "TechRm"
+                }
+            ]
+        },
+        "TechTerminalLog": {
+            "Body": "log user1 user2 user3 user4",
+            "Choices": [
+                {
+                    "Text": "Scan",
+                    "Target": "TechTerminalScan"
+                },
+                {
+                    "Text": "Exit",
+                    "Target": "TechRm"
+                }
+            ]
+        },
+        "TechTerminalScan": {
+            "Body": "scanning ship",
+            "Choices": [
+                {
+                    "Text": "Log",
+                    "Target": "TechTerminalLog"
+                },
+                {
+                    "Text": "Exit",
+                    "Target": "TechRm"
+                }
+            ]
+        },
+        "RecRm": {
+            "Body": "The Rec Room. This is where crew members get to chill and eat. The pantry has enough food to last a crew of 8. There are some playing cards strewn across the table, it seems we had stopped playing midgame for some reason...and why is there 4 hands of cards?",
+            "Choices": [
+                {
+                    "Text": "Towards Front",
+                    "Target": "TechRm"
+                },
+                {
+                    "Text": "Towards Back",
+                    "Target": "BedRmSuit"
+                }
+            ],
+            "LockedChoices": [
+                {
+                    "Text": "Towards Front",
+                    "Target": "TechRm"
+                },
+                {
+                    "Text": "Towards Back",
+                    "Target": "BedRm"
+                }
+            ]
+        },
+        "BedRm": {
+            "Body": "Oakes College, even the buildings have tree bark on them.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "North",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "Change",
+                    "Target": "BedRmSuit"
+                }
+            ],
+            "Suit": "false"
+        },
+        "BedRmSuit": {
+            "Body": "I am still wearing my spacesuit. ",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "North",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "Change",
+                    "Target": "BedRm"
+                }
+            ],
+            "Suit": "true"
+        },
+        "EngRm": {
+            "Body": "Oakes College, even the buildings have tree bark on them.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Beyond"
+                }
+            ],
+            "LockedChoices": [
+                {
+                    "Text": "North",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Beyond"
+                }
+            ]
+        },
+        "OutShip": {
+            "Body": "Oakes College, even the buildings have tree bark on them.",
+            "Choices": [
+                {
+                    "BackInside": "North",
+                    "Target": "Rachel Carson"
+                }
+            ],
+            "Task": true
+        },
+        "EndCmd": {
+            "Body": "normal ending"
+        },
+        "SecretEndCmd": {
+            "Body": "ending if u dont take off suit"
+        }
+    }
+}
