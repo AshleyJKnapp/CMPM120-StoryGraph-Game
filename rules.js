@@ -15,7 +15,7 @@ class Start extends Scene {
 
 class Location extends Scene {
     create(key) {
-        console.log("Suit_on: "+suit_on+"\nTask_complete: "+task_complete);
+        // console.log("Suit_on: "+suit_on+"\nTask_complete: "+task_complete);
         let locationData = key; // use `key` to get the data object for the current story location
 
         this.engine.show(this.engine.storyData.Locations[locationData].Body); // Body of the location data
@@ -48,15 +48,15 @@ class Location extends Scene {
            
             if (suit_on && this.engine.storyData.Locations[locationData].EndChoices) {
                 // Display SecretEndCmd
-                let choice = this.engine.storyData.Locations[locationData].EndChoices[0];
+                let choice = this.engine.storyData.Locations[locationData].EndChoices[1];
                 this.engine.addChoice(choice.Text, choice); // use the Text of the choice
                 this.engine.addChoice(this.engine.storyData.Locations[locationData].EndChoices[2].Text, this.engine.storyData.Locations[locationData].EndChoices[2]); // display the back option (hardcoded at the moment)
+            } else {
+                // Display EndCmd
+                let choice = this.engine.storyData.Locations[locationData].EndChoices[0];
+                this.engine.addChoice(choice.Text, choice);
+                this.engine.addChoice(this.engine.storyData.Locations[locationData].EndChoices[2].Text, this.engine.storyData.Locations[locationData].EndChoices[2]); // display the back option (hardcoded at the moment)
             }
-
-            // Display EndCmd
-            let choice = this.engine.storyData.Locations[locationData].EndChoices[1];
-            this.engine.addChoice(choice.Text, choice);
-            this.engine.addChoice(this.engine.storyData.Locations[locationData].EndChoices[2].Text, this.engine.storyData.Locations[locationData].EndChoices[2]); // display the back option (hardcoded at the moment)
 
         } else if (this.engine.storyData.Locations[locationData].Choices) {
         // Check if the location has any Choices

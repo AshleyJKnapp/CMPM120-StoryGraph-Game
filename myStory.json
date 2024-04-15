@@ -1,10 +1,10 @@
 {
-    "Title": "Epic Title idk Yet!",
+    "Title": "Just Some Casual Space Adventure",
     "Credits": "Created by Ashley Knapp (ajknapp@ucsc.edu).",
     "InitialLocation": "IntroCmdDeck",
     "Locations": {
         "IntroCmdDeck": {
-            "Body": "<p style=\"font-family:verdana\">I look down at my hands. I'm shaking, sitting in my chair in the spaceship's Command Deck. My memory feels fuzzy, maybe it's because of the abrupt panic from the alarms blaring out of nowhere.<br>I turn to see my sole shipmate, Taz. They look just as confused as me. \"Ugh, I feel like shit... can we please shut up that stupid siren??\"</p>",
+            "Body": "<p style=\"font-family:verdana\">I look down at my hands. I'm shaking, sitting in my chair in the spaceship's Command Deck. My memory feels fuzzy, maybe it's because of the panic from the alarms abruptly blaring out of nowhere.<br>I turn to see my sole shipmate, Taz. They look just as confused as me. \"Ugh, I feel like shit... can we please shut up that stupid siren??\"</p>",
             "Choices": [
                 {
                     "Text": "Look around",
@@ -53,7 +53,7 @@
             ]
         },
         "TechTerminal": {
-            "Body": "<p style=\"font-family:courier;color:seagreen\">(WIP) BOOTING</p>",
+            "Body": "<p style=\"font-family:'lucida console';color:seagreen\">&nbsp&nbspBOOTING<br>$ Enter a command to get started</p>",
             "Choices": [
                 {
                     "Text": "Logs",
@@ -70,7 +70,7 @@
             ]
         },
         "TechTerminalLog": {
-            "Body": "<p style=\"font-family:courier;color:seagreen\">WIP log user1 user2 user3 user4</p>",
+            "Body": "<p style=\"font-family:'lucida console';color:seagreen\">$ Select the log to view<br>&nbsp&nbspuser1 user2 user3 user4 user5 user6 user7 user8<br>$ enter password to access logs<br>&nbsp&nbsp********<br>&nbsp&nbspuser1 log - 1 day ago:<br>Not to be an ass or anything but Taz keeps eating the food and we don't have unlimited rations dude...I might need to have a discussion with them and their friend about that later tbh. Also, those two together are like annoying little brothers. They keep saying “this is just like among us!!!” like every day and I cant take it anymore. They're so annoying but at least they're fun to have around. It would be boring without that pair I guess. They entertain all of us.<br>____________________________<br></p> <p style=\"font-family:verdana;Color:black;\">Wait...why are there so many users? It's only me and Taz, and thats's not enough people to match the preceding mission.</p>",
             "Choices": [
                 {
                     "Text": "Scan",
@@ -83,10 +83,10 @@
             ]
         },
         "TechTerminalScan": {
-            "Body": "<p style=\"font-family:courier;color:seagreen\">(WIP) Scanning ship</p>",
+            "Body": "<p style=\"font-family:'lucida console';color:seagreen\">$ Starting ship scan<br>------------------- 100%<br>$ Results:<br>&nbsp&nbspError(s): unknown issue, loosened grate<br>&nbsp&nbspLocation(s): unknown, outside ship starboard<br>&nbsp&nbspsuggested Fix: unknown, align and tighten grate</p>",
             "Choices": [
                 {
-                    "Text": "Log",
+                    "Text": "Logs",
                     "Target": "TechTerminalLog"
                 },
                 {
@@ -137,7 +137,7 @@
             "Suit": "false"
         },
         "BedRmSuit": {
-            "Body": "<p style=\"font-family:verdana\">I'm still wearing my spacesuit. It's lowkey uncomfortable, I hate being on outside maintenance...<br>Anyway, the bedroom still has 15 beds to match the 15 seats in the front from that mission long before us. It makes it feel extra roomy even though our crew is fewer. There's also an area to take care of hygiene and for changing.</p>",
+            "Body": "<p style=\"font-family:verdana\">I'm still wearing my spacesuit. It's lowkey uncomfortable, I hate being on outside maintenance duty...<br>Anyway, the bedroom still has 15 beds to match the 15 seats in the front from that mission long before us. It makes it feel extra roomy even though our crew is fewer. There's also an area to take care of hygiene and for changing.</p>",
             "Choices": [
                 {
                     "Text": "Towards front",
@@ -155,7 +155,7 @@
             "Suit": "true"
         },
         "EngRm": {
-            "Body": "<p style=\"font-family:verdana\">Engineering has access to the engine, shocker! I would've never guessed that. It also has some other things like the ship power and propulsion.<br>This is also where we exit the ship when we have to outside maintenance stuff. Well, that's as long we are wearing a suit of course. Or else your blood starts boiling and you'll expand and explode. I remember learning that in astronaut school.</p>",
+            "Body": "<p style=\"font-family:verdana\">Engineering has access to the engine, shocker! I would've never guessed that. It also has some other things like the ship power and propulsion.<br>This is also where we exit the ship when we have to do outside maintenance stuff. Well, that's as long we are wearing a suit of course. Or else your blood starts boiling and you'll expand and explode. I remember learning that in astronaut school.</p>",
             "Choices": [
                 {
                     "Text": "Towards Front",
@@ -167,6 +167,12 @@
                 }
             ],
             "LockedChoices": [
+                {
+                    "Text": "Towards Front",
+                    "Target": "BedRm"
+                }
+            ],
+            "EndChoices": [
                 {
                     "Text": "Towards Front",
                     "Target": "BedRm"
@@ -189,7 +195,7 @@
             ]
         },
         "OutShip": {
-            "Body": "<p style=\"font-family:verdana\">I make my way to the starboard side of the ship where the loose vent is located. It is barely hanging on by one of its four bolts.<br>The other bolts look to be in sorry condition, surprisingly aged for being relatively new...and what's with this sort of weird, black, slimy residue on the grate? It's kind of gross...<br>Eh, whatever, I sort of just want to get out of this stupid suit. I straighten out the vent and put new bolts in.</p>",
+            "Body": "<p style=\"font-family:verdana\">I make my way to the starboard side of the ship where the loose vent is located. It is barely hanging on by one of its four bolts.<br>The other bolts look to be in sorry condition, surprisingly aged for being relatively new...and what's with this sort of weird, black, slimy residue on the grate? It's kind of gross...<br>Eh, whatever, I just want to get out of this stupid suit. I straighten out the vent and put new bolts in.</p>",
             "Choices": [
                 {
                     "Text": "Back inside",
@@ -199,10 +205,10 @@
             "Task": true
         },
         "EndCmd": {
-            "Body": "<p style=\"font-family:verdana\">(WIP) Normal Ending</p>"
+            "Body": "<p style=\"font-family:verdana\">Back in the Command Deck. <br>As I am making my way to my seat, I pass by Taz who is looking at one of the interior vents suspiciously. As soon as I turn my back, in just a quick moment, I hear a metallic clash and the piercing sound of the alarms strike my ears again. <br>\"AAAAUUG-- MMGPHHFHPP-\"  A scream rips itself from Taz before getting muffled and cutting to silence.<br> I turn around just in time to catch a glimpse of what is happening. As my vision closes in and becomes hazy, I watch a slimy black mass leeching off of Taz's face. The last thought I can get in is how the mass seems to absorb all light that touches it, just like a black hole.<br><br>I open my eyes and look down at my hands. I'm shaking, sitting in my chair in the spaceship's Command Deck. My memory feels fuzzy, maybe it's because of the panic from the alarms abruptly blaring out of nowhere.<br><br> I am all by myself on this spaceship. Maybe I should check out what's causing this...</p>"
         },
         "SecretEndCmd": {
-            "Body": "<p style=\"font-family:verdana\">{(WIP) Secret Ending}</p>"
+            "Body": "<p style=\"font-family:verdana\">Back in the Command Deck. <br>As I am making my way to my seat, I pass by Taz who is looking at one of the interior vents suspiciously. As soon as I turn my back, in just a quick moment, I hear a metallic clash and the piercing sound of the alarms strike my ears again. <br>\"AAAAUUG-- MMGPHHFHPP-\"  A scream rips itself from Taz before getting muffled and cutting to silence. <br> I turn around slowly, weighed down by my cumbersome spacesuit. I watch as Taz's silenced body falls to the floor, being engulfed by a strange, slimy black mass that seemed to absorb all light, like a black hole. As Taz'z corpse is absorbed into the creature without a trace, I try to move my body towards them, but I don't have the strength. My vision fades to black.<br><br>I open my eyes and look down at my hands. I'm shaking, sitting in my chair in the spaceship's Command Deck. My memory is as clear as the alarms blaring in the background.<br><br> I am all by myself on this spaceship. <i>And I know what's been happening to my crew.</i></p>"
         }
     }
 }
