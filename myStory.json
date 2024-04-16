@@ -1,5 +1,5 @@
 {
-    "Title": "Just Some Casual Space Adventure",
+    "Title": "Just a Story on Some Random Spaceship",
     "Credits": "Created by Ashley Knapp (ajknapp@ucsc.edu).",
     "InitialLocation": "IntroCmdDeck",
     "Locations": {
@@ -185,12 +185,6 @@
                 {
                     "Text": "Towards Front",
                     "Target": "BedRmSuit"
-                }
-            ],
-            "LockedChoices": [
-                {
-                    "Text": "Towards Front",
-                    "Target": "BedRm"
                 }
             ]
         },

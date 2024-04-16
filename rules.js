@@ -45,7 +45,12 @@ class Location extends Scene {
         } else if (task_complete && this.engine.storyData.Locations[locationData].EndChoices) {
         // Check if game is finished and display the correct ending Location if moving to the ending room
         // (There are two endings which happen in the same room, but are different Locations in the code)
-           
+            // hardcoding this specific case oopsie!!
+            if (this.engine.storyData.Locations[locationData] == this.engine.storyData.Locations.EngRm){
+                for (let choice of this.engine.storyData.Locations[locationData].EndChoices) { // loop over the location's Choices
+                    this.engine.addChoice(choice.Text, choice); // use the Text of the choice
+                }
+            }
             if (suit_on && this.engine.storyData.Locations[locationData].EndChoices) {
                 // Display SecretEndCmd
                 let choice = this.engine.storyData.Locations[locationData].EndChoices[1];
