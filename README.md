@@ -1,6 +1,6 @@
-# StoryGraphTool
+# StoryGraph-Game
 
-An exercise in building data-driven game design
+A small game made with the StoryGraphTool https://github.com/rndmcnlly/StoryGraphTool
 
 ## Activity Instructions
 
@@ -8,11 +8,7 @@ This activity gets you thinking about how to keep key aspects of your game desig
 
 ### Programming
 
-Open this project in your favorite text editor and start a local web server. View `index.html` in your browser through the server you started. You should see the title of the story and the first choice, but other aspects of the game should be broken.
-
-In your text editor, open `rules.js` and follow the `TODO` comments as a guide to repairing the code.
-
-If your repair works, you should be able to play all the way through the end of the story.
+Open this project in your favorite text editor and start a local web server. View `index.html` in your browser through the server you started.
 
 ### Authoring
 
